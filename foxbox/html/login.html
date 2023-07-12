@@ -94,7 +94,7 @@
   var login = document.getElementById('email').value;
   var senha = document.getElementById('password').value;
   
-  if (login == validar()){ 
+  if (checar() = true){ 
     window.location.href = "estoque.html";
     
   } else {
@@ -110,6 +110,12 @@
       alert('cadastrado');
     } else {
       alert ('n cadastrado');}
+  }
+  function checar() {
+    if (login = cadastro && senha = confirmsenha){
+      window.location.href = "estoque.html";
+    } else {
+    alert ('usuario ou senha incorretos');}
   }
 
   </script>
